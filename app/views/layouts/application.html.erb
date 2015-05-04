@@ -7,6 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="sidebar">
+		<div id="logo"></div>
+			<%= link_to root_path do %>
+				<%= image_tag "saturn.jpg", height: "50", width: "50" %>
+			<% end %>
+			<ul>
+					<!-- <li class="category">Website</li> -->
+					<li><%= link_to "Blog", root_path %></li>
+					<li>About</li>
+				</ul>
+			<ul>
+				<li class="category">Social</li>
+				<li><a href="https://twitter.com/tiffany_haltom">Twitter</li>
+				<li><a href="https://github.com/tiffanyhaltom">Github</li>
+				<li><a href="https://www.linkedin.com/in/tiffanyhaltom">LinkedIn</li>
+				<li><a href="http://www.codecademy.com/scriptPlayer32538">CodeAcdemy</li>
+			</ul>
+
+
+	</div>
 
 <%= yield %>
 
